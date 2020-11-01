@@ -92,4 +92,4 @@ def chooseRandomJoinMessage():
     randomNum = random.randrange(0,len(messages))
     return messages[randomNum]
 
-client.run('NjkxMzMyNjg5ODEwNDIzODI4.Xneb_w.z6_JCnaba7TaDaF2VcV9SKbWerU')
+client.run('token_here')
