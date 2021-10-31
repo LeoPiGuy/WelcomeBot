@@ -5,7 +5,11 @@ import asyncio
 
 from random_word import RandomWords
 
-client = discord.Client()
+intents = discord.Intents.default()
+intents.members = True
+
+client = discord.Client(intents=intents)
+
 r = RandomWords()
 
 @client.event
@@ -92,4 +96,4 @@ def chooseRandomJoinMessage():
     randomNum = random.randrange(0,len(messages))
     return messages[randomNum]
 
-client.run('token_here')
+client.run('insert token here')
